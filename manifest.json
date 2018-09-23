@@ -1,0 +1,12 @@
+{
+    "name": "Youtube Auto Unpauser",
+    "version": "1.0",
+    "description": "Click youtube unpause button for you",
+    "permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["unpause.js"],
+        "run_at": "document_end"
+    }],
+    "manifest_version": 2
+}
